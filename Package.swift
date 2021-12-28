@@ -43,21 +43,21 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(name: "idenfycore",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/idenfycore.xcframework.zip",
-                      checksum: "8bc8cfffb3a78eb6d619e47f607a8e53aa43aa7c089dc56028a92f0b75134e6d"),
+                      checksum: "15efdc7e2da8500a423c2523242dcc95f117de60b20473c022fbdc9ed5160884"),
         .binaryTarget(name: "idenfyviews",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/idenfyviews.xcframework.zip",
-                      checksum: "933dd020a6043e7faa9e2b4105490fb594fcc02136211ef310861eeaf102236b"),
+                      checksum: "ae2b7eea5e6a33a50fae2f4e86ebdb97a7929e4de2bccceedfe1307a75dad5ad"),
         .binaryTarget(name: "idenfyNFCReading",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/idenfyNFCReading.xcframework.zip",
-                      checksum: "362d8728de518021076acfa75b8314c21698c1237fc6441889a7bb2371b2b1db"),
+                      checksum: "813d5a64489eedb9dc4ceb5f46892b8bd5eb75eb60d4499e3e2dd230c845e0fb"),
         .binaryTarget(name: "IdenfyLiveness",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/IdenfyLiveness.xcframework.zip",
-                      checksum: "206e683cbf4946f8794cafd65b04d05ffa3c07d28fb5a33ea7ea9632af1da86e"),
+                      checksum: "82110a4d30f194b23880fd12a870357e761865af7b6bccfa5928e07f4cff0b03"),
         .binaryTarget(name: "iDenfySDK",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/iDenfySDK.xcframework.zip",
-                      checksum: "ccbb4cda69766d980050937f66e4c9317bbafa804015a8eaedd90e8bdca7c39c"),
+                      checksum: "8335ea245498888401833ca52676b0ac8e698dc7e6128475fa6438349d729139"),
         .binaryTarget(name: "FaceTecSDK",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/FaceTecSDK.xcframework.zip",
-                      checksum: "5b2678e5d1b2c2b8f2839c10c412620beb55d0d29464ce2f0656acd13494747d")
+                      checksum: "720ba8607f4300d48470240aae89d1d73281a9f99850cb239779d732da1a6469")
     ]
 )
