@@ -31,7 +31,7 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/JonasGessner/JGProgressHUD.git",
-            .exact("2.2")
+            .exact("2.2.0")
         ),
         .package(
             url: "https://github.com/weichsel/ZIPFoundation.git",
