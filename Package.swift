@@ -13,10 +13,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "iDenfySDK",
-            targets: ["idenfycore", "idenfyviews", "idenfyNFCReading", "iDenfySDK"]),
+            targets: ["idenfycore", "idenfyviewsWrapper", "idenfyNFCReading", "iDenfySDKWrapper"]),
         .library(
             name: "iDenfySDK-Liveness",
-            targets: ["idenfycore", "idenfyviews", "IdenfyLiveness", "FaceTecSDK", "idenfyNFCReading", "iDenfySDK"]),
+            targets: ["idenfycore", "idenfyviewsWrapper", "idenfyLivenessWrapper", "FaceTecSDK", "idenfyNFCReading", "iDenfySDKWrapper"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -41,6 +41,30 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
+        .target(
+            name: "idenfyviewsWrapper",
+            dependencies: [
+                .product(name: "Lottie", package: "Lottie"),
+                .target(name: "idenfyviews")
+            ]
+        ),
+        .target(
+            name: "idenfyLivenessWrapper",
+            dependencies: [
+                .product(name: "Lottie", package: "Lottie"),
+                .target(name: "IdenfyLiveness")
+            ]
+        ),
+        .target(
+            name: "iDenfySDKWrapper",
+            dependencies: [
+                .product(name: "Lottie", package: "Lottie"),
+                .product(name: "JGProgressHUD", package: "JGProgressHUD"),
+                .product(name: "ZIPFoundation", package: "ZIPFoundation"),
+                .product(name: "Sentry", package: "Sentry"),
+                .target(name: "iDenfySDK")
+            ]
+        ),
         .binaryTarget(name: "idenfycore",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/idenfycore.xcframework.zip",
                       checksum: "15efdc7e2da8500a423c2523242dcc95f117de60b20473c022fbdc9ed5160884"),
