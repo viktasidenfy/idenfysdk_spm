@@ -46,14 +46,18 @@ let package = Package(
             dependencies: [
                 .product(name: "lottie-ios", package: "lottie-ios"),
                 .target(name: "idenfyviews")
-            ]
+            ],
+            path: "Sources/idenfyviewsWrapper",
+            publicHeadersPath: ""
         ),
         .target(
             name: "idenfyLivenessWrapper",
             dependencies: [
                 .product(name: "lottie-ios", package: "lottie-ios"),
                 .target(name: "IdenfyLiveness")
-            ]
+            ],
+            path: "Sources/idenfyLivenessWrapper",
+            publicHeadersPath: ""
         ),
         .target(
             name: "iDenfySDKWrapper",
@@ -63,7 +67,9 @@ let package = Package(
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
                 .product(name: "sentry-cocoa", package: "sentry-cocoa"),
                 .target(name: "iDenfySDK")
-            ]
+            ],
+            path: "Sources/iDenfySDKWrapper",
+            publicHeadersPath: ""
         ),
         .binaryTarget(name: "idenfycore",
                       url: "https://s3.eu-west-1.amazonaws.com/sdk.builds/ios-sdk/0.0.1/idenfycore.xcframework.zip",
