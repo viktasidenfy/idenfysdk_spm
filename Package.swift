@@ -22,18 +22,22 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(
+            name: "Sentry",
             url: "https://github.com/getsentry/sentry-cocoa.git",
             .exact("7.5.2")
         ),
         .package(
+            name: "Lottie",
             url: "https://github.com/airbnb/lottie-ios.git",
             .exact("3.2.2")
         ),
         .package(
+            name: "JGProgressHUD",
             url: "https://github.com/JonasGessner/JGProgressHUD.git",
             .exact("2.2.0")
         ),
         .package(
+            name: "ZIPFoundation",
             url: "https://github.com/weichsel/ZIPFoundation.git",
             .exact("0.9.11")
         )
