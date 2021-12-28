@@ -48,7 +48,7 @@ let package = Package(
         .target(
             name: "idenfyviewsWrapper",
             dependencies: [
-                .product(name: "Lottie", package: "lottie-ios"),
+                .product(name: "Lottie", package: "Lottie"),
                 .target(name: "idenfyviews")
             ],
             path: "Sources/idenfyviewsWrapper",
@@ -57,7 +57,7 @@ let package = Package(
         .target(
             name: "idenfyLivenessWrapper",
             dependencies: [
-                .product(name: "Lottie", package: "lottie-ios"),
+                .product(name: "Lottie", package: "Lottie"),
                 .target(name: "IdenfyLiveness")
             ],
             path: "Sources/idenfyLivenessWrapper",
@@ -66,10 +66,10 @@ let package = Package(
         .target(
             name: "iDenfySDKWrapper",
             dependencies: [
-                .product(name: "Lottie", package: "lottie-ios"),
+                .product(name: "Lottie", package: "Lottie"),
                 .product(name: "JGProgressHUD", package: "JGProgressHUD"),
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
-                .product(name: "Sentry", package: "sentry-cocoa"),
+                .product(name: "Sentry", package: "Sentry"),
                 .target(name: "iDenfySDK")
             ],
             path: "Sources/iDenfySDKWrapper",
