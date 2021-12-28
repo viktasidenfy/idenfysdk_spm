@@ -44,21 +44,21 @@ let package = Package(
         .target(
             name: "idenfyviewsWrapper",
             dependencies: [
-                .product(name: "Lottie", package: "Lottie"),
+                .product(name: "lottie-ios", package: "lottie-ios"),
                 .target(name: "idenfyviews")
             ]
         ),
         .target(
             name: "idenfyLivenessWrapper",
             dependencies: [
-                .product(name: "Lottie", package: "Lottie"),
+                .product(name: "lottie-ios", package: "lottie-ios"),
                 .target(name: "IdenfyLiveness")
             ]
         ),
         .target(
             name: "iDenfySDKWrapper",
             dependencies: [
-                .product(name: "Lottie", package: "Lottie"),
+                .product(name: "lottie-ios", package: "lottie-ios"),
                 .product(name: "JGProgressHUD", package: "JGProgressHUD"),
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
                 .product(name: "Sentry", package: "Sentry"),
