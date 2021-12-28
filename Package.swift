@@ -30,6 +30,10 @@ let package = Package(
             .exact("3.2.2")
         ),
         .package(
+            url: "https://github.com/JonasGessner/JGProgressHUD.git",
+            .exact("2.2")
+        ),
+        .package(
             url: "https://github.com/weichsel/ZIPFoundation.git",
             .exact("0.9.11")
         )
