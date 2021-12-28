@@ -61,7 +61,7 @@ let package = Package(
                 .product(name: "lottie-ios", package: "lottie-ios"),
                 .product(name: "JGProgressHUD", package: "JGProgressHUD"),
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
-                .product(name: "Sentry", package: "Sentry"),
+                .product(name: "sentry-cocoa", package: "sentry-cocoa"),
                 .target(name: "iDenfySDK")
             ]
         ),
